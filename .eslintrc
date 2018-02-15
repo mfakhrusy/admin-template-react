@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "eslint.packageManager": "yarn",
+  "extends": "react-app",
+  "env": {
+      "node": true,
+      "browser": true
+  },
+  "plugins": [
+    "react"
+  ]
+}

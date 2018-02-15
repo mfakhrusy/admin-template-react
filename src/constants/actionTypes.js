@@ -1,0 +1,1 @@
+export const SIDEBAR_FILTER = 'SIDEBAR_FILTER';
