@@ -1,26 +1,34 @@
-import React, { Component } from 'react';
-// import { Switch, Route } from 'react-router-dom';
-import SidebarMainboard from './SidebarMainboard';
-import SidebarChat from './SidebarChat';
-import SidebarStatistics from './SidebarStatistics';
-import SidebarNotification from './SidebarNotification';
-import SidebarAlert from './SidebarAlert';
+import React from 'react';
+import SidebarMainboard from './Mainboard/SidebarMainboard';
+import SidebarChat from './Chat/SidebarChat';
+import SidebarStatistics from './Statistics/SidebarStatistics';
+import SidebarNotification from './Notification/SidebarNotification';
+import SidebarAlert from './Alert/SidebarAlert';
 
 
-class SidebarMain extends Component {
-  render() {
-    return (
-      <div>
-        {/* <Switch> */}
-          {/* <Route exact path="/" component={SidebarMainboard} /> */}
-          {/* <Route path="/chat" component={SidebarChat} /> */}
-          {/* <Route path="/statistics" component={SidebarStatistics} /> */}
-          {/* <Route path="/notification" component={SidebarNotification} /> */}
-          {/* <Route path="/alert" component={SidebarAlert} /> */}
-        {/* </Switch> */}
-      </div>
-    )
+const SidebarMainItem = ({showFilter}) => {
+  switch (showFilter) {
+    case 'SHOW_MAINBOARD':
+      return (<SidebarMainboard />);
+    case 'SHOW_CHAT':
+      return (<SidebarChat />);
+    case 'SHOW_STATISTICS':
+      return (<SidebarStatistics />);
+    case 'SHOW_NOTIFICATION':
+      return (<SidebarNotification />);
+    case 'SHOW_ALERT':
+      return (<SidebarAlert />);
+    default:
+      return (<p>ERROR!!!!</p>); // lol
   }
+}
+
+const SidebarMain = ({showFilter}) => {
+  return (
+    <div className="sidebar-main">
+      <SidebarMainItem showFilter={showFilter} />
+    </div>
+  );
 }
 
 export default SidebarMain;

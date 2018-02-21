@@ -1,5 +1,5 @@
 import React from 'react';
-import Mainpage from './Mainpage/Mainpage'
+import ContainerMainpage from '../containers/Mainpage/ContainerMainpage';
 import Sidebar from './Sidebar/Sidebar'
 
 class App extends React.Component {
@@ -7,7 +7,8 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <Sidebar />
-        <Mainpage />
+        <ContainerMainpage />
+        {/* <h1>Hellow</h1> */}
       </div>
     );
   }

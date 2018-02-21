@@ -1,7 +1,7 @@
 import React from 'react';
 import SidebarHead from './SidebarHead';
 import SidebarFilter from './SidebarFilter';
-import SidebarMain from './SidebarMain';
+import ContainerSidebarMain from '../../containers/ContainerSidebarMain';
 
 class Sidebar extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Sidebar extends React.Component {
       <div className="page-sidebar" id="page-sidebar">
         <SidebarHead />
         <SidebarFilter />
-        <SidebarMain />
+        <ContainerSidebarMain />
       </div>
     );
   }

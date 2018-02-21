@@ -1,10 +1,16 @@
-import { SIDEBAR_FILTER } from '../constants/actionTypes';
+import { SET_SIDEBAR_FILTER, SEARCH_SIDEBAR_MAINBOARD } from '../constants/actionTypes';
 
-const SIDEBAR_FILTER = 'SIDEBAR_FILTER';
 
-export const setSidebarFilter = (filter) => {
+export const setSidebarFilter = (showFilter) => {
   return {
-    type: SIDEBAR_FILTER,
-    filter: filter
+    type: SET_SIDEBAR_FILTER,
+    showFilter: showFilter
+  }
+}
+
+export const searchSidebarMainboard = (searchText) => {
+  return {
+    type: SEARCH_SIDEBAR_MAINBOARD,
+    searchText: searchText
   }
 }

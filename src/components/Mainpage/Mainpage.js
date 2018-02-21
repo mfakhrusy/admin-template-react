@@ -5,7 +5,8 @@ class Mainpage extends Component {
     return (
       <div>
         <h1>
-          Main Page Here
+          {/* {this.props.value} */}
+          Mainpage
         </h1>
       </div>
     )

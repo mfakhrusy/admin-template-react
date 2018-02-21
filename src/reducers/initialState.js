@@ -1,5 +1,8 @@
-export default initialState {
+let initialState = {
   sidebar: {
-    filter: ''
+    showFilter: 'SHOW_MAINBOARD',
+    searchText: ''
   }
 };
+
+export default initialState;
