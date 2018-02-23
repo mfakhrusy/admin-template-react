@@ -1,0 +1,27 @@
+.sidebar-mainboard-search-box {
+
+  input[type=text] {
+    padding: 0.5rem; 
+    border: 0.2rem solid $fontcolor-basic-primary; 
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+nav#mainboard-pages-list {
+  
+  ul {
+    list-style-type: none;
+  }
+
+  > ul {
+    padding: 0;
+  }
+
+  a {
+    color: $fontcolor-basic-primary;
+    text-decoration: none;
+  }
+}
