@@ -1,0 +1,53 @@
+{
+  "status": "success",
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "User 1",
+        "userStatus": "online"
+      },
+      {
+        "id": 2,
+        "name": "User 1",
+        "userStatus": "online"
+      },
+      {
+        "id": 3,
+        "name": "User 1",
+        "userStatus": "online"
+      },
+      {
+        "id": 4,
+        "name": "User 4",
+        "userStatus": "busy"
+      },
+      {
+        "id": 5,
+        "name": "User 5",
+        "userStatus": "busy"
+      },
+      {
+        "id": 6,
+        "name": "User 6",
+        "userStatus": "busy"
+      },
+      {
+        "id": 7,
+        "name": "User 7",
+        "userStatus": "offline"
+      },
+      {
+        "id": 8,
+        "name": "User 8",
+        "userStatus": "offline"
+      },
+      {
+        "id": 9,
+        "name": "User 9",
+        "userStatus": "offline"
+      }
+
+    ]
+  }
+}

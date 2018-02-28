@@ -1,22 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContainerSearchBox from '../../../containers/Sidebar/ContainerSearchBox';
+import ContainerPageList from '../../../containers/Sidebar/ContainerPageList';
+import ItemHeader from '../ItemHeader';
 
 class Mainboard extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Mainboard</h1>
-        <ul>
-          <li>
-            <Link to="/">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/mailbox">Mailbox</Link>
-          </li>
-          <li>
-            <Link to="/social">Social</Link>
-          </li>
-        </ul>
+      <div className="sidebar-mainboard">
+        <ContainerSearchBox />
+        <ItemHeader>Pages</ItemHeader>
+        <ContainerPageList />
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Mainboard from './Mainboard/Mainboard';
 import Alert from './Alert/Alert';
-import Chat from './Chat/Chat';
+import ContainerChat from '../../containers/Sidebar/Chat/ContainerChat';
 import Notification from './Notification/Notification';
 import Statistics from './Statistics/Statistics';
 
@@ -11,7 +11,7 @@ const SidebarMainItem = ({showFilter}) => {
     case 'SHOW_MAINBOARD':
       return (<Mainboard />);
     case 'SHOW_CHAT':
-      return (<Chat />);
+      return (<ContainerChat />);
     case 'SHOW_STATISTICS':
       return (<Statistics />);
     case 'SHOW_NOTIFICATION':

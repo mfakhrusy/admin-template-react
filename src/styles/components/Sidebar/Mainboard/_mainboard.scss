@@ -1,7 +1,7 @@
 .sidebar-mainboard-search-box {
 
   input[type=text] {
-    padding: 0.5rem; 
+    padding: 0.8rem;
     border: 0.2rem solid $fontcolor-basic-primary; 
     background-color: transparent;
     border-top: none;
@@ -10,10 +10,13 @@
   }
 }
 
-nav#mainboard-pages-list {
+nav.mainboard-pages-list {
+
+  width: 100%;
   
   ul {
     list-style-type: none;
+    width: 100%;
   }
 
   > ul {
@@ -24,4 +27,39 @@ nav#mainboard-pages-list {
     color: $fontcolor-basic-primary;
     text-decoration: none;
   }
+}
+
+div.page-list-item {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.mainboard-icon {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.mainboard-icon-arrow {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  @include transition(0.5s);
+}
+
+.mainboard-icon-arrow-open {
+  transform: rotate(-90deg);
+  @include transition(0.5s);
+}
+
+ul.page-list-dropdown {
+  display: none;
+  @include transition(0.5s);
+}
+
+ul.page-list-dropdown-open {
+  display: block;
+  @include transition(0.5s);
 }

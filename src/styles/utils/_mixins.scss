@@ -1,0 +1,6 @@
+@mixin transition($transition-effects...) {
+  -webkit-transition: $transition-effects;
+     -moz-transition: $transition-effects;
+       -o-transition: $transition-effects;
+          transition: $transition-effects;
+}
