@@ -7,7 +7,7 @@ import initialState from '../initialState';
 export function usersHasErrored(state = false, action) {
   switch (action.type) {
       case USERS_HAS_ERRORED:
-          return action.hasErrored;
+          return action.usersHasErrored;
 
       default:
           return state;
@@ -17,14 +17,14 @@ export function usersHasErrored(state = false, action) {
 export function usersIsLoading(state = false, action) {
   switch (action.type) {
       case USERS_IS_LOADING:
-          return action.isLoading;
+          return action.usersIsLoading;
 
       default:
           return state;
   }
 }
 
-export function users(state = ['test'], action) {
+export function users(state = [], action) {
   switch (action.type) {
       case USERS_FETCH_DATA_SUCCESS:
         return action.users;

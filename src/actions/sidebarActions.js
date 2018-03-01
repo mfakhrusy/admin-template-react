@@ -31,14 +31,14 @@ export const setSidebarMainboard = (showPage) => {
 export const usersHasErrored = (bool) => {
   return {
       type: USERS_HAS_ERRORED,
-      hasErrored: bool
+      usersHasErrored: bool
   };
 }
 
 export const usersIsLoading = (bool) => {
   return {
       type: USERS_IS_LOADING,
-      isLoading: bool
+      usersIsLoading: bool
   };
 }
 
@@ -47,26 +47,4 @@ export const usersFetchDataSuccess = (users) => {
     type: USERS_FETCH_DATA_SUCCESS,
     users: users
   };
-}
-
-// below is for redux thunk, action creator that return function instead of action
-
-export const usersFetchData = (url) => {
-
-  return ((dispatch) => {
-    dispatch(usersIsLoading(true));
-    fetch(url)
-      .then((response) => {
-       if (!response.ok) {
-         throw Error(response.statusText);
-       }
-
-        dispatch(usersIsLoading(false));
-
-        return response;
-      })
-      .then((response) => response.json())
-      .then((users) => dispatch(usersFetchDataSuccess(users)))
-      .catch(() => dispatch(usersHasErrored(true)));
-  });
 }

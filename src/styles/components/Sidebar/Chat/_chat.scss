@@ -1,0 +1,18 @@
+$avatar-height: 5rem;
+$avatar-width: 5rem;
+
+.sidebar-chat-item {
+  display: flex;
+}
+
+.chat-user-avatar {
+  width: $avatar-width;
+  height: $avatar-height;
+  overflow: hidden;
+  img {
+    width: 2 * $avatar-width;
+    height: 2 * $avatar-height;
+    margin-top: -0.5 * $avatar-height;
+    margin-left: -0.5 * $avatar-width;
+  }
+}

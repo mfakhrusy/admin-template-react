@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Chat from '../../../components/Sidebar/Chat/Chat';
-import { usersFetchData } from '../../../actions/sidebarActions';
+import { usersFetchData } from '../../../actions/sidebarActions'; // REMEMBER IMPORT NOT DEFAULT
 
 const mapStateToProps = (state) => {
   return {
@@ -10,13 +10,13 @@ const mapStateToProps = (state) => {
     isLoading: state.usersIsLoading
   }
 }
-
+/*
 const mapDispatchToProps = (dispatch) => {
   return {
       fetchData: (url) => dispatch(usersFetchData(url))
   };
 };
-
-const ContainerChat = connect(mapStateToProps, mapDispatchToProps)(Chat);
+*/
+const ContainerChat = connect(mapStateToProps/*, mapDispatchToProps*/)(Chat);
 
 export default ContainerChat;
