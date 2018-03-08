@@ -1,4 +1,12 @@
 let initialState = {
+  globalPage: {
+    pageIsLocked: false,
+    pageIsLoading: false,
+    pageHasErrored: false
+  },
+  navbar: {
+    navbarThemeChangerIsActive: false
+  },
   sidebar: {
     showFilter: 'SHOW_MAINBOARD',
     searchText: '',
@@ -99,6 +107,9 @@ let initialState = {
       }
     ],
     users: []
+  },
+  misc: {
+    pageColor: "red"
   }
 };
 

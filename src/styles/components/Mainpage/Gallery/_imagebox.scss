@@ -1,0 +1,11 @@
+.gallery-image-box {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid salmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

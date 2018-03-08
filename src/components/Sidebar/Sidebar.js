@@ -1,15 +1,16 @@
 import React from 'react';
 import SidebarHead from './SidebarHead';
-// import SidebarMain from './SidebarMain';
-import SidebarFilter from './SidebarFilter';
+import ContainerSidebarHead from '../../containers/Sidebar/ContainerSidebarHead';
+import ContainerSidebarFilter from '../../containers/Sidebar/ContainerSidebarFilter';
+// import SidebarFilter from './SidebarFilter';
 import ContainerSidebarMain from '../../containers/Sidebar/ContainerSidebarMain';
 
 class Sidebar extends React.Component {
   render() {
     return (
       <div className="page-sidebar" id="page-sidebar">
-        <SidebarHead />
-        <SidebarFilter />
+        <ContainerSidebarHead />
+        <ContainerSidebarFilter />
         <ContainerSidebarMain />
       </div>
     );

@@ -1,0 +1,197 @@
+// red theme
+.color-red-primary {
+  background-color: $color-red-primary;
+}
+
+.color-red-secondary {
+  background-color: $color-red-secondary;
+  &:hover {
+    background-color: $color-red-secondary-dark;
+  }
+}
+
+.fontcolor-red-primary {
+  color: $color-red-primary;
+}
+
+.color-picker-box.color-red-primary {
+  &:hover {
+    background-color: darken($color-red-primary, 5%);
+  }
+}
+
+.navbar-power-off.color-red-primary,
+.navbar-dropdown-item.color-red-primary {
+  &:hover {
+    background-color: $color-red-primary-light;
+  }
+}
+
+.navbar-dropdown-item.color-red-primary {
+  background-color: lighten($color-red-primary, 30%);
+}
+
+// green
+.color-green-primary {
+  background-color: $color-green-primary;
+}
+
+.color-green-secondary {
+  background-color: $color-green-secondary;
+  &:hover {
+    background-color: $color-green-secondary-dark;
+  }
+}
+
+.fontcolor-green-primary {
+  color: $color-green-primary;
+}
+
+.color-picker-box.color-green-primary {
+  &:hover {
+    background-color: darken($color-green-primary, 5%);
+  }
+}
+
+.navbar-power-off.color-green-primary,
+.navbar-dropdown-item.color-green-primary {
+  &:hover {
+    background-color: $color-green-primary-light;
+  }
+}
+
+.navbar-dropdown-item.color-green-primary {
+  background-color: lighten($color-green-primary, 30%);
+}
+
+// blue theme
+.color-blue-primary {
+  background-color: $color-blue-primary;
+}
+
+.color-blue-secondary {
+  background-color: $color-blue-secondary;
+  &:hover {
+    background-color: $color-blue-secondary-dark;
+  }
+}
+
+.fontcolor-blue-primary {
+  color: $color-blue-primary;
+}
+
+.color-picker-box.color-blue-primary {
+  &:hover {
+    background-color: darken($color-blue-primary, 5%);
+  }
+}
+
+.navbar-power-off.color-blue-primary,
+.navbar-dropdown-item.color-blue-primary {
+  &:hover {
+    background-color: $color-blue-primary-light;
+  }
+}
+
+.navbar-dropdown-item.color-blue-primary {
+  background-color: lighten($color-blue-primary, 20%);
+}
+
+// violet theme
+.color-violet-primary {
+  background-color: $color-violet-primary;
+}
+
+.color-violet-secondary {
+  background-color: $color-violet-secondary;
+  &:hover {
+    background-color: $color-violet-secondary-dark;
+  }
+}
+
+.fontcolor-violet-primary {
+  color: $color-violet-primary;
+}
+
+.color-picker-box.color-violet-primary {
+  &:hover {
+    background-color: darken($color-violet-primary, 5%);
+  }
+}
+
+.navbar-power-off.color-violet-primary,
+.navbar-dropdown-item.color-violet-primary {
+  &:hover {
+    background-color: $color-violet-primary-light;
+  }
+}
+
+.navbar-dropdown-item.color-violet-primary {
+  background-color: lighten($color-violet-primary, 12%);
+}
+
+// brown theme
+.color-brown-primary {
+  background-color: $color-brown-primary;
+}
+
+.color-brown-secondary {
+  background-color: $color-brown-secondary;
+  &:hover {
+    background-color: $color-brown-secondary-dark;
+  }
+}
+
+.fontcolor-brown-primary {
+  color: $color-brown-primary;
+}
+
+.color-picker-box.color-brown-primary {
+  &:hover {
+    background-color: darken($color-brown-primary, 5%);
+  }
+}
+
+.navbar-power-off.color-brown-primary,
+.navbar-dropdown-item.color-brown-primary {
+  &:hover {
+    background-color: $color-brown-primary-light;
+  }
+}
+
+.navbar-dropdown-item.color-brown-primary {
+  background-color: lighten($color-brown-primary, 30%);
+}
+
+// grey theme
+.color-grey-primary {
+  background-color: $color-grey-primary;
+}
+
+.color-grey-secondary {
+  background-color: $color-grey-secondary;
+  &:hover {
+    background-color: $color-grey-secondary-dark;
+  }
+}
+
+.fontcolor-grey-primary {
+  color: $color-grey-primary;
+}
+
+.color-picker-box.color-grey-primary {
+  &:hover {
+    background-color: darken($color-grey-primary, 5%);
+  }
+}
+
+.navbar-power-off.color-grey-primary,
+.navbar-dropdown-item.color-grey-primary {
+  &:hover {
+    background-color: $color-grey-primary-light;
+  }
+}
+
+.navbar-dropdown-item.color-grey-primary {
+  background-color: lighten($color-grey-primary, 30%);
+}

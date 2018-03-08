@@ -7,7 +7,8 @@ import { pageFetchData } from '../actions/globalActions'; // REMEMBER IMPORT NOT
 const mapStateToProps = (state) => {
   return {
     pageHasErrored: state.pageHasErrored,
-    pageIsLoading: state.pageIsLoading
+    pageIsLoading: state.pageIsLoading,
+    pageIsLocked: state.pageIsLocked
   }
 }
 

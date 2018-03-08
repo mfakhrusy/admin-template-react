@@ -5,10 +5,47 @@ $basecolor-white: #ffffff;
 $color-basic-primary: #263034;
 $color-basic-secondary: #171D20;
 
+// theme color
+$darken-level: 11%;
+$lighten-level: 5%;
 $color-red-primary: #ff5555;
 $color-red-secondary: #DE5939;
-$color-red-secondary-dark: darken($color-red-secondary, 20%);
+$color-red-secondary-dark: darken($color-red-secondary, $darken-level);
+$color-red-primary-light: lighten($color-red-primary, $lighten-level);
+
+$color-green-primary: #56B596;
+$color-green-secondary: #279982;
+$color-green-secondary-dark: darken($color-green-secondary, $darken-level);
+$color-green-primary-light: lighten($color-green-primary, $lighten-level);
+
+$color-blue-primary: #80BAF9;
+$color-blue-secondary: #6FA2D9;
+$color-blue-secondary-dark: darken($color-blue-secondary, $darken-level);
+$color-blue-primary-light: lighten($color-blue-primary, $lighten-level);
+
+$color-violet-primary: #BEAAEA;
+$color-violet-secondary: #A593CA;
+$color-violet-secondary-dark: darken($color-violet-secondary, $darken-level);
+$color-violet-primary-light: lighten($color-violet-primary, $lighten-level);
+
+$color-brown-primary: #B55B3E;
+$color-brown-secondary: #954B33;
+$color-brown-secondary-dark: darken($color-brown-secondary, $darken-level);
+$color-brown-primary-light: lighten($color-brown-primary, $lighten-level);
+
+$color-grey-primary: #70ACB2;
+$color-grey-secondary: #5C8E92;
+$color-grey-secondary-dark: darken($color-grey-secondary, $darken-level);
+$color-grey-primary-light: lighten($color-grey-primary, $lighten-level);
 
 // font color
 $fontcolor-basic-primary: #779497;
 $fontcolor-basic-secondary: #4B565B;
+$fontcolor-github-nickname: $fontcolor-basic-secondary;
+
+// heights and widths
+$navbar-height: 7.5rem;
+$sidebar-width: 25rem;
+$sidebar-head-height: $navbar-height;
+$sidebar-filter-height: 5rem;
+$sidebar-filter-width: $sidebar-filter-height;

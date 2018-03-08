@@ -2,6 +2,8 @@ import { PAGE_FETCH_DATA_SUCCESS,
   PAGE_IS_LOADING,
   PAGE_HAS_ERRORED } from '../constants/actionTypes';
 import { usersFetchDataSuccess } from './sidebarActions';
+import { notificationsFetchDataSuccess, newsfeedFetchDataSuccess } from './navbarActions';
+import { galleryFetchDataSuccess } from './mainpageActions';
 import urlApis from '../constants/urlApis';
 import 'whatwg-fetch';
 
@@ -48,16 +50,32 @@ export const pageFetchData = (urlApis) => { // urlApis is an array of object con
         .then((responseJSON) => {
           dispatch(pageIsLoading(false));
           let checkState = apiObj.forState;
-          // console.log(typeof checkState);
           switch (checkState) {
             case 'users':
               return (
                 dispatch(usersFetchDataSuccess(responseJSON))
               );
+            case 'notifications':
+              return (
+                dispatch(notificationsFetchDataSuccess(responseJSON))
+              );
+            case 'news':
+              return (
+                dispatch(newsfeedFetchDataSuccess(responseJSON))
+              );
+            case 'galleryImages':
+              return (
+                dispatch(galleryFetchDataSuccess(responseJSON))
+              );
+            case 'finished':
+              return responseJSON;
             default:
-
               throw Error(response.statusText);  
           }
+        })
+        .then((response) => {
+          dispatch(pageIsLoading(false)); // a little hack so the dispatch is sent after all files finished downloaded
+          return response;
         })
         .catch(() => {
           return (

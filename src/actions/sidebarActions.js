@@ -1,4 +1,5 @@
-import { SET_SIDEBAR_FILTER,
+import { SET_SIDEBAR_PAGE_LOCK,
+  SET_SIDEBAR_FILTER,
   SEARCH_SIDEBAR_MAINBOARD,
   SET_SIDEBAR_MAINBOARD,
   USERS_FETCH_DATA_SUCCESS,
@@ -6,6 +7,12 @@ import { SET_SIDEBAR_FILTER,
   USERS_HAS_ERRORED } from '../constants/actionTypes';
 import 'whatwg-fetch';
 
+export const setSidebarPageLock = (bool) => {
+  return {
+    type: SET_SIDEBAR_PAGE_LOCK,
+    pageIsLocked: bool
+  }
+}
 
 export const setSidebarFilter = (showFilter) => {
   return {

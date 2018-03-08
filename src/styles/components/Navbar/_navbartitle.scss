@@ -1,0 +1,15 @@
+.navbar-title {
+  display: flex;
+  align-items: center;
+  width: auto;
+
+  i {
+    margin-right: 1rem;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+  }
+}

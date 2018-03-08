@@ -1,0 +1,10 @@
+.navbar-notification-avatar {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  img {
+    object-fit: cover;
+  }
+}

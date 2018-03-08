@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-const FontAwesomeIcon = ({icon, iconSize}) => {
+const FontAwesomeIcon = ({icon, iconSize, color}) => {
   return (
-    <i className={icon + " " + iconSize}></i>
+    <i className={icon + " " + iconSize + " " + color}></i>
   );
 }
 

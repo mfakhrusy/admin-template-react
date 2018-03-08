@@ -2,14 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7.5rem;
-  background-color: $color-red-primary;
+  height: $navbar-height;
+  // background-color: $color-red-primary;
+
+  p {
+    margin-right: 0.5rem;
+  }
+
+  transition: 0.3s ease-out;
+
 }
 
 .sidebar-avatar {
 
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+
   img {
     border-radius: 50%;
   }
+}
+
+.sidebar-lock-button {
+  cursor: pointer;
 }

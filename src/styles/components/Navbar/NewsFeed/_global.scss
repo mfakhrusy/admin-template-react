@@ -1,0 +1,24 @@
+.navbar-newsfeed-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.navbar-newsfeed-item {
+  display: flex;
+  border: 0.1rem solid blue;
+}
+
+.github-nickname {
+  color: $fontcolor-github-nickname;
+  font-weight: bold;
+}
+
+.navbar-newsfeed-message p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.navbar-newsfeed-message p:nth-child(2) {
+  font-style: italic;
+}

@@ -1,0 +1,79 @@
+nav.page-navbar {
+  height: $navbar-height;
+  background-color: $color-basic-primary;
+  display: flex;
+  color: $fontcolor-basic-primary;
+  position: fixed;
+  right: 0;
+  padding-left: 25rem;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: $fontcolor-basic-primary;
+    &:hover {
+      background-color: lighten($color-basic-primary, 30%);
+      color: darken($fontcolor-basic-primary, 30%);
+      transition: 0.3s ease;
+    }
+  }
+
+  // a i {
+    // color: $fontcolor-basic-primary;
+  // }
+
+  > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &:hover {
+    background-color: lighten($color-basic-primary, 30%);
+    color: darken($fontcolor-basic-primary, 30%);
+    transition: 0.3s ease;
+  }
+
+  &:not(:first-child) {
+    border-left: 0.05rem solid $fontcolor-basic-primary;  
+    width: 7.5rem;
+  }
+
+
+  &:first-child {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+  }
+}

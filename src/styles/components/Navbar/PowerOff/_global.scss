@@ -1,0 +1,7 @@
+.navbar-power-off {
+  transition: 0.3s ease-out;
+
+  &:hover {
+    transition: 0.3s ease;
+  }
+}

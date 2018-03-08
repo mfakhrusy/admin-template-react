@@ -1,18 +1,53 @@
 $avatar-height: 5rem;
 $avatar-width: 5rem;
 
+.sidebar-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-chat-list {
+  padding: 0;
+}
+
+.chat-list-online .chat-user-avatar {
+  border: 0.3rem #00d300 solid;
+}
+
+.chat-list-busy .chat-user-avatar {
+  border: 0.3rem #d30000 solid;
+}
+
+.chat-list-offline .chat-user-avatar {
+  border: 0.3rem #414141 solid;
+}
+
 .sidebar-chat-item {
   display: flex;
+  margin: 1.5rem 0;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: darken($color-basic-primary, 20%);
+    transition: 0.3s ease-in;
+  }
 }
 
 .chat-user-avatar {
   width: $avatar-width;
   height: $avatar-height;
   overflow: hidden;
+  border-radius: 50%;
+  margin-right: 1rem;
   img {
-    width: 2 * $avatar-width;
-    height: 2 * $avatar-height;
-    margin-top: -0.5 * $avatar-height;
-    margin-left: -0.5 * $avatar-width;
+    object-fit: cover;
   }
 }

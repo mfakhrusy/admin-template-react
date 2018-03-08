@@ -1,6 +1,10 @@
 .sidebar-main {
   padding: 1rem;
-  min-height: 100%;
+  height: calc(100% - 12.5rem); // 12.5 = 5 (from filter) + 7.5 (from head), tried to do this like above but fail
   background-color: $color-basic-primary;
   color: $fontcolor-basic-primary;
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+  position: relative;
 }
