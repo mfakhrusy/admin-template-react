@@ -1,5 +1,5 @@
 import React from 'react';
-import FontAwesomeIcon from '../FontAwesomeIcon';
+import FontAwesomeIcon from '../../Utils/FontAwesomeIcon';
 
 
 class ModalBoxHeader extends React.Component {

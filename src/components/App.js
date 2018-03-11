@@ -4,9 +4,8 @@ import Sidebar from './Sidebar/Sidebar';
 import Mainpage from './Mainpage/Mainpage';
 import Navbar from './Navbar/Navbar';
 import LoadingPage from './Utils/LoadingPage';
-import LockedPage from './Utils/LockedPage';
+import ModalCollection from './Utils/ModalCollection';
 import ContainerLockedPage from '../containers/Utils/ContainerLockedPage';
-import ContainerModalThemeChanger from '../containers/Utils/ModalThemeChanger/ContainerModalThemeChanger';
 
 import urlApis from '../constants/urlApis';
 
@@ -32,7 +31,7 @@ class App extends React.Component {
         <div className="page-wrapper">  
           <Sidebar />
           <div className="main-wrapper">
-            <ContainerModalThemeChanger />  
+            <ModalCollection />  
             <Navbar />
             <Mainpage />
           </div>

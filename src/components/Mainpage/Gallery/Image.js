@@ -1,4 +1,5 @@
 import React from 'react';
+import FontAwesomeIcon from '../../Utils/FontAwesomeIcon';
 
 class Image extends React.Component {
   constructor(props) {
@@ -13,7 +14,8 @@ class Image extends React.Component {
   };
   
   handleClick() {
-    console.log(this.props.images);
+    this.props.onClick(!this.props.galleryModalImageIsActive);
+    this.props.setGalleryModalImage(this.props.imageUrl);
   };
 
   toggleHover() {
@@ -27,7 +29,9 @@ class Image extends React.Component {
       return (
         <div className="gallery-image" onClick={this.handleClick} onMouseLeave={this.toggleHover}>
           <img src={this.props.imageUrl} alt={this.props.imageAlt}/>
-          <p>Lalalal</p>
+          <div className="gallery-image-cover">
+          <FontAwesomeIcon color={`fontcolor-${this.props.color}-primary`} icon="fas fa-search-plus" iconSize="fa-5x" />
+          </div>
         </div>
       )
     } else {

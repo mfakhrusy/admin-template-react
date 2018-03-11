@@ -4,6 +4,7 @@ main#page-mainpage {
   justify-content: center;
   align-items: center;
   > div {
+    background-color: $color-background-mainpage;
     min-height: 100%;
     width: calc(100% - #{$sidebar-width}); // interpolate so it can work
     left: 0.5 * $sidebar-width;

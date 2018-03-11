@@ -1,24 +1,5 @@
 .modal-theme-changer-wrapper {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba($color: #000000, $alpha: 0.7);
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: auto;
   width: 60rem;
-  background-color: #fff;
-  box-sizing: border-box;
 }
 
 .modal-box-header {
@@ -36,11 +17,11 @@
 
 .modal-close-button {
   cursor: pointer;
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 
   &:hover {
     color: $fontcolor-basic-secondary;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
   }
 }
 

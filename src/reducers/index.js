@@ -5,6 +5,7 @@ import { navbarThemeChangerIsActive } from './navbar/navbarThemeChanger';
 import { notifications } from './navbar/notifications';
 import { news } from './navbar/news';
 import { galleryImages } from './mainpage/galleryImages';
+import { galleryModalImageIsActive, galleryImageUrl } from './mainpage/galleryModal';
 import { pageIsLocked } from './sidebar/pageLock';
 import { showFilter }  from './sidebar/showFilter';
 import { searchText } from './sidebar/searchText';
@@ -19,6 +20,8 @@ const allReducers = combineReducers({
   notifications,
   news,
   galleryImages,
+  galleryModalImageIsActive,
+  galleryImageUrl,
   searchText,
   showFilter,
   pageItems,

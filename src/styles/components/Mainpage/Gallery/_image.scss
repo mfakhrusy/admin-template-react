@@ -1,3 +1,21 @@
 .gallery-image {
   margin-bottom: 2rem;
+  position: relative;
+  cursor: pointer;
+  img {
+    height: $mainpage-gallery-image-height;
+    width: auto;  
+  }
+}
+
+.gallery-image-cover {
+  position: absolute;
+  height: $mainpage-gallery-image-height;
+  width: 100%;
+  top: 0;
+  background-color: rgba($color: $basecolor-black, $alpha: 0.8);
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

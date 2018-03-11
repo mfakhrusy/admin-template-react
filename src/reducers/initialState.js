@@ -4,6 +4,12 @@ let initialState = {
     pageIsLoading: false,
     pageHasErrored: false
   },
+  mainpage: {
+    gallery: {
+      galleryModalImageIsActive: false,
+      galleryImageId: ""
+    }
+  },
   navbar: {
     navbarThemeChangerIsActive: false
   },

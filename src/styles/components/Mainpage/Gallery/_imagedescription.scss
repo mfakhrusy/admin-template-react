@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 90%;
 
   > p:first-child {
     margin-bottom: 0.5rem;
+    color: $fontcolor-basic-secondary;
+    font-weight: lighter;
   }
 }

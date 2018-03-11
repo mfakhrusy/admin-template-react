@@ -1,20 +1,27 @@
 import React from 'react';
-// import ContainerImage from '../../../containers/Mainpage/Gallery/ContainerImage';
+import ContainerImage from '../../../containers/Mainpage/Gallery/ContainerImage';
 import ImageDescription from './ImageDescription';
-import Image from './Image';
-
 
 class ImageBox extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      imageDescription: {
+        description: this.props.image.description,
+        imageDate: this.props.image.createdAt,
+        isLiked: this.props.image.isLiked,
+        like: this.props.image.like,
+        id: this.props.image.id
+      }
+    }
   }
-  
 
   render() {
     return (
       <div className="gallery-image-box">
-        <Image imageUrl={this.props.image.imageUrl} imageAlt={this.props.image.alt}/>
-        <ImageDescription description={this.props.image.description} imageDate={this.props.image.createdAt}/>
+        <ContainerImage imageUrl={this.props.image.imageUrl} imageAlt={this.props.image.alt} />
+        <ImageDescription imageDescription={this.state.imageDescription}/>
       </div>
     )
   }

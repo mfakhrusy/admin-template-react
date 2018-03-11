@@ -1,7 +1,12 @@
 // base color
 $basecolor-white: #ffffff;
+$basecolor-black: #000000;
+$basecolor-grey-1: #545454;
+$basecolor-grey-2: #bcbcbc;
+
 
 // component's color
+$color-background-mainpage: #cce4cc;
 $color-basic-primary: #263034;
 $color-basic-secondary: #171D20;
 
@@ -37,15 +42,3 @@ $color-grey-primary: #70ACB2;
 $color-grey-secondary: #5C8E92;
 $color-grey-secondary-dark: darken($color-grey-secondary, $darken-level);
 $color-grey-primary-light: lighten($color-grey-primary, $lighten-level);
-
-// font color
-$fontcolor-basic-primary: #779497;
-$fontcolor-basic-secondary: #4B565B;
-$fontcolor-github-nickname: $fontcolor-basic-secondary;
-
-// heights and widths
-$navbar-height: 7.5rem;
-$sidebar-width: 25rem;
-$sidebar-head-height: $navbar-height;
-$sidebar-filter-height: 5rem;
-$sidebar-filter-width: $sidebar-filter-height;
