@@ -11,9 +11,55 @@
   border-radius: 0.5rem;
   box-shadow: $box-shadow-basic;
   transition: 0.1s ease-in;
+  position: relative;
+
+  
 
   &:hover {
     box-shadow: $box-shadow-hover;
     transition: 0.1s ease-out;
+  }
+}
+
+.image-box-minimized {
+  height: 2rem;
+  cursor: default;
+  img {
+    visibility: hidden;
+  }
+
+  .gallery-image-description,
+  .gallery-image-cover {
+    display: none;
+  }
+
+  .gallery-image {
+    cursor: default;
+  }
+}
+
+.image-box-head-buttons {
+  position: absolute;
+  top: -1.2rem;
+  right: 0;
+  background-color: $basecolor-white;
+  display: flex;
+}
+
+.image-box-head-button {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.2rem;
+  cursor: pointer;
+  color: $fontcolor-basic-primary;
+  transition: 0.1s ease-out;
+
+  &:hover {
+    color: $basecolor-black;
+    transition: 0.1s ease-in;
   }
 }

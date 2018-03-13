@@ -2,7 +2,9 @@ import { GALLERY_FETCH_DATA_SUCCESS,
   SET_GALLERY_MODAL,
   SET_GALLERY_MODAL_IMAGE,
   INCREMENT_GALLERY_IMAGE_LIKE_BUTTON,
-  DECREMENT_GALLERY_IMAGE_LIKE_BUTTON } from '../constants/actionTypes';
+  DECREMENT_GALLERY_IMAGE_LIKE_BUTTON,
+  TOGGLE_LIKE_BUTTON,
+  REMOVE_GALLERY_IMAGE } from '../constants/actionTypes';
 
 export const galleryFetchDataSuccess = (galleryImages) => {
   return {
@@ -35,6 +37,20 @@ export const incrementLikeButton = (imageId) => {
 export const decrementLikeButton = (imageId) => {
   return {
     type: DECREMENT_GALLERY_IMAGE_LIKE_BUTTON,
+    imageId: imageId
+  }
+}
+
+export const toggleLikeButton = (imageId) => {
+  return {
+    type: TOGGLE_LIKE_BUTTON,
+    imageId: imageId
+  }
+}
+
+export const removeGalleryImage = (imageId) => {
+  return {
+    type: REMOVE_GALLERY_IMAGE,
     imageId: imageId
   }
 }

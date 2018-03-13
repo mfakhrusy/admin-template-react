@@ -8,6 +8,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+}
+
+span.like-button-icon {
+  margin-right: 2rem;
 }
 
 .gallery-like-button-base-color {

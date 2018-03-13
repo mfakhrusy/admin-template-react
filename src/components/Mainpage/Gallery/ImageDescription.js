@@ -10,7 +10,7 @@ class ImageDescription extends React.Component {
   render() {
     return (
       <div className="gallery-image-description">
-        <p>{this.props.imageDescription.imageDate}</p>
+        <p>{this.props.imageDescription.createdAt}</p>
         <p>{this.props.imageDescription.description}</p>
         <ContainerLikeButton isLiked={this.props.imageDescription.isLiked} like={this.props.imageDescription.like} imageId={this.props.imageDescription.id}/>
       </div>

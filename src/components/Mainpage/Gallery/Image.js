@@ -25,7 +25,16 @@ class Image extends React.Component {
   };
   
   render() {
-    if (this.state.hover) {
+    if (this.props.isMinimized) {
+      return (
+        <div className="gallery-image">
+          <img src={this.props.imageUrl} alt={this.props.imageAlt}/>
+          <div className="gallery-image-cover">
+          <FontAwesomeIcon color={`fontcolor-${this.props.color}-primary`} icon="fas fa-search-plus" iconSize="fa-5x" />
+          </div>
+        </div>        
+      )
+    } else if (this.state.hover) {
       return (
         <div className="gallery-image" onClick={this.handleClick} onMouseLeave={this.toggleHover}>
           <img src={this.props.imageUrl} alt={this.props.imageAlt}/>

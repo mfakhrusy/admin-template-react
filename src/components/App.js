@@ -14,7 +14,6 @@ class App extends React.Component {
   componentDidMount() {
     this.props.fetchData(urlApis);
   }
-
   render() {
 
     if (this.props.pageIsLoading) {
@@ -26,7 +25,6 @@ class App extends React.Component {
         <ContainerLockedPage />
       )
     } else {
-
       return (
         <div className="page-wrapper">  
           <Sidebar />
@@ -37,8 +35,7 @@ class App extends React.Component {
           </div>
         </div>
       );
-    } 
-
+    }
   }
 }
 

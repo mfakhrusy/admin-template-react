@@ -6,21 +6,32 @@ class LikeButton extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   
-    this.like = this.props.like;
+
 }
   
   handleClick() {
-    console.log(this.props.imageId);
-    if (!this.props.isLiked) {
-      this.like++; 
+    this.props.toggleLike(this.props.imageId);
+    if (this.props.isLiked) {
+      this.props.decrementLike(this.props.imageId)
+    } else {
+      this.props.incrementLike(this.props.imageId)
     }
   }
 
+  toggleHover() {
+
+  }
+
   render() {
+
     return (
-      <div className={"gallery-like-button " + (this.props.isLiked ? `color-${this.props.color}-primary` : "gallery-like-button-base-color")} onClick={this.handleClick}>
+      <div 
+        className={"gallery-like-button " + (this.props.isLiked ? `color-${this.props.color}-primary` : "gallery-like-button-base-color")} 
+        onClick={this.handleClick}>
+        <span className="like-button-icon">
+          <FontAwesomeIcon icon={(this.props.isLiked ? "fas" : "far") + " fa-heart"} iconSize="fa-1x" />
+        </span>
         <p>{this.props.like}</p>
-        <FontAwesomeIcon icon={(this.props.isLiked ? "fas" : "far") + " fa-heart"} iconSize="fa-1x" />
       </div>
     )
   }

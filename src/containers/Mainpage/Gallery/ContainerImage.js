@@ -16,7 +16,6 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
   return {
-    images: state.galleryImages,
     color: state.pageColor,
     galleryModalImageIsActive: state.galleryModalImageIsActive
   };
